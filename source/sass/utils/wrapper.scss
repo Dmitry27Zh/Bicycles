@@ -1,0 +1,13 @@
+.wrapper {
+  max-width: 1126px;
+  padding: 0 40px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width-max) {
+    padding: 0 20px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding: 0 16px;
+  }
+}
