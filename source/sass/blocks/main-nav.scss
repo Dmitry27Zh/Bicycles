@@ -1,4 +1,134 @@
+.main-nav {
+  order: -1;
+
+  @media (max-width: $tablet-width-max) {
+    order: 0;
+  }
+
+  &--no-js {
+    .main-nav__toggle {
+      display: none;
+    }
+
+    .main-nav__list {
+      display: block;
+    }
+  }
+
+  &--opened {
+    .main-nav__toggle {
+      background-color: transparent;
+      &::before,
+      &::after {
+        width: 30px;
+        top: 25px;
+        left: 7px;
+        transform: rotate(45deg);
+        background-color: rgba($effect-dark, 0.2);
+      }
+      &::after {
+        transform: rotate(-45deg);
+        box-shadow: none;
+      }
+    }
+
+    .main-nav__list {
+      display: block;
+      position: absolute;
+    }
+  }
+}
+
+.main-nav__toggle {
+  display: none;
+
+  @media (max-width: $tablet-width-max) {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    background-color: $cyan;
+    border: none;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 18px;
+      left: 13px;
+      width: 22px;
+      height: 1px;
+      background-color: $black;
+    }
+
+    &::after {
+      top: 25px;
+      box-shadow: 0 7px 0 $black;
+    }
+  }
+}
+
+.main-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 19px;
+  padding-right: 25px;
+  border-bottom: 1px solid rgba($white, 0.2);
+
+  @media (max-width: $tablet-width-max) {
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    padding: 0;
+    padding-top: 100px;
+    border-bottom: none;
+    background-color: $white;
+  }
+}
+
+.main-nav__item {
+  padding-top: 21px;
+  padding-bottom: 9px;
+
+  @media (max-width: $tablet-width-max) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 25px 17px 16px;
+    background-color: $main-gray;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 8px;
+      height: 8px;
+      transform: rotate(-45deg);
+      border-bottom: 2px solid rgba($dark-blue, 0.5);
+      border-right: 2px solid rgba($dark-blue, 0.5);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
 .main-nav__link {
   font-weight: 300;
   color: rgba($white, 0.7);
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 20px;
+    line-height: 26px;
+    color: $graphite-gray;
+  }
 }
