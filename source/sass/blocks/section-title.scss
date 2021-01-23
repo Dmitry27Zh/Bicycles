@@ -1,0 +1,16 @@
+.section-title {
+  margin: 0 auto;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  color: $main-dark;
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 24px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 18px;
+  }
+}
