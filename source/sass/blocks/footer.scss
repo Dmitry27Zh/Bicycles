@@ -4,6 +4,7 @@
   text-align: center;
 
   @media (max-width: $tablet-width-max) {
+    padding-top: 50px;
     padding-bottom: 52px;
   }
 
@@ -39,6 +40,7 @@
   width: 66.45%;
   max-width: 957px;
   height: 36.8vw;
+  max-height: 530px;
 
   @media (max-width: $tablet-width-max) {
     width: 698px;

@@ -8,6 +8,10 @@
     padding-top: 50px;
     padding-bottom: 70px;
   }
+
+  @media (max-width: $mobile-width-max) {
+    padding-bottom: 52px;
+  }
 }
 
 .types__wrapper {
