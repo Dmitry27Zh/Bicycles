@@ -3,38 +3,40 @@
 
   @media (max-width: $tablet-width-max) {
     order: 0;
-  }
 
-  &--no-js {
-    .main-nav__toggle {
-      display: none;
-    }
-
-    .main-nav__list {
-      display: block;
-    }
-  }
-
-  &--opened {
-    .main-nav__toggle {
-      background-color: transparent;
-      &::before,
-      &::after {
-        width: 30px;
-        top: 25px;
-        left: 7px;
-        transform: rotate(45deg);
-        background-color: rgba($effect-dark, 0.2);
+    &--no-js {
+      .main-nav__toggle {
+        display: none;
       }
-      &::after {
-        transform: rotate(-45deg);
-        box-shadow: none;
+
+      .main-nav__list {
+        display: block;
       }
     }
 
-    .main-nav__list {
-      display: block;
-      position: absolute;
+    &--opened {
+      .main-nav__toggle {
+        background-color: transparent;
+
+        &::before,
+        &::after {
+          width: 30px;
+          top: 25px;
+          left: 7px;
+          transform: rotate(45deg);
+          background-color: rgba($effect-dark, 0.2);
+        }
+
+        &::after {
+          transform: rotate(-45deg);
+          box-shadow: none;
+        }
+      }
+
+      .main-nav__list {
+        display: block;
+        position: absolute;
+      }
     }
   }
 }
