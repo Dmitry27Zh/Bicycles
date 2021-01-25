@@ -60,11 +60,11 @@
           <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
           <div class="promo__callback-field">
             <label class="visually-hidden" for="name">Введите Ваше имя</label>
-            <input type="text" id="name" placeholder="Введите Ваше имя">
+            <input type="text" id="name" placeholder="Введите Ваше имя" pattern="^[А-Яа-яЁё\s]+$" required>
           </div>
           <div class="promo__callback-field">
             <label class="visually-hidden" for="tel">Введите Ваш номер телефона</label>
-            <input type="tel" id="tel" placeholder="Введите Ваш номер телефона">
+            <input type="tel" id="tel" placeholder="Введите Ваш номер телефона" pattern="[0-9]{11}" required>
           </div>
           <button class="promo__callback-submit" type="submit">Подобрать велосипед мечты</button>
         </form>
@@ -98,7 +98,7 @@
           <li class="types__item types__item--road">
             <div class="types__picture types__picture--road">
               <picture>
-                <source srcset="img/type-1@1x.wepb 1x, img/type-1@2x.wepb 2x" type="image/wepb">
+                <!-- <source srcset="img/type-1@1x.webp 1x, img/type-1@2x.webp 2x" type="image/webp"> -->
                 <img src="img/type-1@1x.jpg" srcset="img/type-1@2x.jpg" width="342" height="543"
                   alt="Дорожный велосипед">
               </picture>
@@ -108,7 +108,7 @@
           <li class="types__item types__item--mountain">
             <div class="types__picture types__picture--mountain">
               <picture>
-                <source srcset="img/type-2@1x.wepb 1x, img/type-2@2x.wepb 2x" type="image/wepb">
+                <!-- <source srcset="img/type-2@1x.webp 1x, img/type-2@2x.webp 2x" type="image/webp"> -->
                 <img src="img/type-2@1x.jpg" srcset="img/type-2@2x.jpg" width="342" height="566" alt="Горный велосипед">
               </picture>
             </div>
@@ -117,7 +117,7 @@
           <li class="types__item types__item--children">
             <div class="types__picture types__picture--children">
               <picture>
-                <source srcset="img/type-3@1x.wepb 1x, img/type-3@2x.wepb 2x" type="image/wepb">
+                <!-- <source srcset="img/type-3@1x.webp 1x, img/type-3@2x.webp 2x" type="image/webp"> -->
                 <img src="img/type-3@1x.jpg" srcset="img/type-3@2x.jpg" width="342" height="513"
                   alt="Детский велосипед">
               </picture>
@@ -133,7 +133,7 @@
         <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
         <div class="video__content">
           <picture>
-            <source srcset="img/video@1x.wepb 1x, img/video@2x.wepb 2x" type="image/wepb">
+            <!-- <source srcset="img/video@1x.webp 1x, img/video@2x.webp 2x" type="image/webp"> -->
             <img src="img/video@1x.jpg" srcset="img/video@2x.jpg 2x" width="959" height="522" alt="Велосипед">
           </picture>
           <button class="video__play">
@@ -154,7 +154,7 @@
       <p class="wrapper">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
       <div class="footer__map wrapper">
         <picture>
-          <source srcset="img/map@1x.wepb 1x, img/map@2x.wepb 2x" type="image/wepb">
+          <!-- <source srcset="img/map@1x.webp 1x, img/map@2x.webp 2x" type="image/webp"> -->
           <img src="img/map@1x.png" srcset="img/map@2x.png 2x" width="957" height="530" alt="Расположение на карте">
         </picture>
       </div>
