@@ -4,13 +4,43 @@
   justify-content: space-between;
 
   @media (max-width: $tablet-width-max) {
-    margin-top: 88px;
+    position: relative;
     flex-direction: column;
     align-items: center;
+    padding-top: 84px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -50px;
+      z-index: -1;
+      width: 100%;
+      height: 340px;
+      background-color: $medium-dark;
+      background-image: url("../img/main-background-tablet@1x.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/main-background-tablet@2x.jpg");
+      }
+
+      @media (max-width: $mobile-width-max) {
+        background-image: url("../img/main-background-mobile@1x.jpg");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/main-background-mobile@2x.jpg");
+        }
+      }
+    }
   }
 
   @media (max-width: $mobile-width-max) {
-    margin-top: 70px;
+    padding-top: 70px;
+
+    &::after {
+      height: 390px;
+    }
   }
 }
 

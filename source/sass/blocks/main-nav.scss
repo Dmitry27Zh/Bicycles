@@ -11,6 +11,8 @@
 
       .main-nav__list {
         display: block;
+        position: static;
+        height: auto;
       }
     }
 
@@ -87,8 +89,8 @@
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    z-index: 100;
     position: fixed;
+    z-index: 100;
     top: -100%;
     left: 0;
     width: 100%;
