@@ -127,6 +127,7 @@
   &--mountain {
     @media (min-width: $desktop-width-min) {
       height: 39.3vw;
+      max-height: 566px;
     }
 
     &::before,
@@ -155,6 +156,7 @@
   &--children {
     @media (min-width: $desktop-width-min) {
       height: 35.56vw;
+      max-height: 512px;
     }
 
     &::before {

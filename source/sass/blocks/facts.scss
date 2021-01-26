@@ -1,6 +1,5 @@
 .facts {
-  padding-top: 150px;
-  padding-bottom: 131px;
+  padding: 150px 0;
   text-align: center;
 
   @media (max-width: $tablet-width-max) {
@@ -10,6 +9,8 @@
 }
 
 .facts__wrapper {
+  max-width: 1166px;
+
   @media (max-width: $tablet-width-max) {
     width: 76.82%;
   }
@@ -38,8 +39,8 @@
 
 .facts__item {
   position: relative;
-  width: 23.35%;
-  padding-top: 60px;
+  width: 22.35%;
+  padding-top: 55px;
   counter-increment: facts-increment;
 
   @media (max-width: $tablet-width-max) {
