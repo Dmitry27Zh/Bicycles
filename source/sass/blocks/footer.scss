@@ -45,6 +45,7 @@
   @media (max-width: $tablet-width-max) {
     width: 698px;
     height: 545px;
+    max-height: 545px;
   }
 
   @media (max-width: $mobile-width-max) {
@@ -62,14 +63,15 @@
 
 .footer__contacts {
   margin-top: 40px;
-  max-width: 555px;
+  width: 555px;
 
   @media (min-width: $tablet-width-min) {
     padding: 0;
   }
 
   @media (max-width: $tablet-width-max) {
-    width: 72.65%;
+    width: 545px;
+    margin-top: 20px;
   }
 
   @media (max-width: $mobile-width-max) {
@@ -82,6 +84,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (max-width: $tablet-width-max) {
+    margin-left: -4px;
+  }
 
   @media (max-width: $mobile-width-max) {
     flex-direction: column;
@@ -100,7 +106,6 @@
 .footer__contacts-link {
   display: flex;
   align-items: center;
-  padding-right: 17px;
   line-height: 22px;
   color: rgba($black, 0.5);
 }

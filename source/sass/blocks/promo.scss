@@ -88,7 +88,7 @@
   margin-top: -16px;
 
   @media (max-width: $tablet-width-max) {
-    width: 43.67%;
+    width: 41.82%;
     margin-top: 150px;
   }
 
@@ -109,6 +109,8 @@
     text-align: center;
 
     @media (max-width: $tablet-width-max) {
+      margin-bottom: 30px;
+      font-size: 18px;
       color: $black;
     }
   }
@@ -126,6 +128,10 @@
     color: rgba($deep-dark, 0.5);
     border: 1px solid $special-gray;
     border-radius: 6px;
+
+    @media (max-width: $tablet-width-max) {
+      padding: 12px 24px 10px;
+    }
   }
 }
 
