@@ -113,6 +113,10 @@
       font-size: 18px;
       color: $black;
     }
+
+    @media (max-width: $mobile-width-max) {
+      margin-bottom: 20px;
+    }
   }
 }
 

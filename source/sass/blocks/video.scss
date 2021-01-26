@@ -63,6 +63,10 @@
     top: 15px;
   }
 
+  @media (max-width: $mobile-width-max) {
+    top: 0;
+  }
+
   img {
     display: block;
   }
