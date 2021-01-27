@@ -132,6 +132,15 @@
     color: rgba($deep-dark, 0.5);
     border: 1px solid $special-gray;
     border-radius: 6px;
+    outline: none;
+
+    &:focus {
+      border-color: $accent;
+    }
+
+    &:invalid:not(:placeholder-shown) {
+      border-color: $warning;
+    }
 
     @media (max-width: $tablet-width-max) {
       padding: 12px 24px 10px;
@@ -140,13 +149,5 @@
 }
 
 .promo__callback-submit {
-  box-sizing: border-box;
   width: 100%;
-  padding: 15px 29px;
-  font-size: 15px;
-  line-height: 21px;
-  font-weight: 600;
-  background-color: $cyan;
-  border: none;
-  border-radius: 6px;
 }

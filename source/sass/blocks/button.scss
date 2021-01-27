@@ -1,0 +1,16 @@
+.button {
+  box-sizing: border-box;
+  padding: 15px 29px;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 600;
+  background-color: $cyan;
+  border: none;
+  border-radius: 6px;
+
+  &:hover,
+  &:focus {
+    background-color: $accent;
+    color: $white;
+  }
+}

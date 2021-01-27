@@ -112,6 +112,21 @@
   line-height: 22px;
   color: rgba($black, 0.5);
 
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+
+    .footer__contacts-icon {
+      &--mail {
+        fill: $accent;
+      }
+
+      &--tel {
+        stroke: $accent;
+      }
+    }
+  }
+
   @media (max-width: $mobile-width-max) {
     padding-right: 0;
     padding-left: 5px;

@@ -135,6 +135,11 @@
   font-weight: 300;
   color: rgba($white, 0.7);
 
+  &:hover,
+  &:focus {
+    color: $white;
+  }
+
   @media (max-width: $tablet-width-max) {
     font-size: 20px;
     line-height: 26px;

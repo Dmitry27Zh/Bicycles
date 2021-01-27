@@ -202,4 +202,9 @@
   font-weight: 600;
   letter-spacing: -0.5px;
   color: $black;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
 }
