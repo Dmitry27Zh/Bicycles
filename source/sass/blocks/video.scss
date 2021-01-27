@@ -91,6 +91,7 @@
     transform: scale(1.5);
     background-color: $accent;
     transition: all 0.3s ease;
+    cursor: pointer;
 
     .video__play-icon {
       fill: rgba($white, 0.7);

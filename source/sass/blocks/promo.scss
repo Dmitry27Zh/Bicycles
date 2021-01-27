@@ -134,6 +134,7 @@
     border-radius: 6px;
     outline: none;
 
+    &:hover,
     &:focus {
       border-color: $accent;
     }
