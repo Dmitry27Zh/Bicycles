@@ -87,6 +87,10 @@
   width: 37.21%;
   margin-top: -16px;
 
+  @media (min-width: $desktop-width-min) {
+    min-width: 280px;
+  }
+
   @media (max-width: $tablet-width-max) {
     width: 41.82%;
     margin-top: 150px;
@@ -130,14 +134,14 @@
     font-family: $font-family-main;
     font-size: 15px;
     line-height: 24px;
-    color: rgba($deep-dark, 0.5);
+    color: $deep-dark;
     border: 1px solid $special-gray;
     border-radius: 6px;
     outline: none;
 
     &:hover,
     &:focus {
-      border-color: $accent;
+      border-color: $focus;
     }
 
     &:invalid:not(:placeholder-shown) {

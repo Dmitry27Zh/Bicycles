@@ -22,6 +22,7 @@
 .header__wrapper {
   @media (min-width: $desktop-width-min) {
     width: 60.83%;
+    min-width: 670px;
     max-width: 876px;
   }
 

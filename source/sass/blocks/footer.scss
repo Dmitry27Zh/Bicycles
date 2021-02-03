@@ -89,6 +89,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: -22px;
 
   @media (max-width: $mobile-width-max) {
     flex-direction: column;
@@ -97,11 +98,7 @@
 }
 
 .footer__contacts-item {
-  &:not(:last-child) {
-    @media (max-width: $mobile-width-max) {
-      margin-bottom: 22px;
-    }
-  }
+  margin-bottom: 22px;
 }
 
 .footer__contacts-link {

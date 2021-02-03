@@ -25,10 +25,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 50px;
+  margin-bottom: -40px;
 
   @media (max-width: $tablet-width-max) {
     margin-top: 35px;
-    margin-bottom: -40px;
   }
 
   @media (max-width: $mobile-width-max) {
@@ -41,11 +41,11 @@
   position: relative;
   width: 22.35%;
   padding-top: 55px;
+  margin-bottom: 40px;
   counter-increment: facts-increment;
 
   @media (max-width: $tablet-width-max) {
     box-sizing: border-box;
-    margin-bottom: 40px;
     width: 50%;
     padding-left: 17px;
     padding-right: 17px;
@@ -66,7 +66,7 @@
   }
 
   &::before {
-    content: "0"counter(facts-increment);
+    content: "0" counter(facts-increment);
     display: block;
     position: absolute;
     top: 0;
