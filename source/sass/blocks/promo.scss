@@ -19,6 +19,7 @@
       background-color: $medium-dark;
       background-image: url("../img/main-background-tablet@1x.jpg");
       background-repeat: no-repeat;
+      background-position-y: -1px;
       background-size: cover;
 
       @media (min-resolution: 2dppx) {
