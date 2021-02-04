@@ -36,7 +36,7 @@
       }
 
       .main-nav__list {
-        display: flex;
+        display: block;
       }
     }
   }
@@ -77,8 +77,8 @@
 }
 
 .main-nav__list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
   justify-content: space-between;
   box-sizing: border-box;
   padding-left: 19px;
@@ -87,9 +87,6 @@
 
   @media (max-width: $tablet-width-max) {
     display: none;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
     position: fixed;
     z-index: 100;
     top: 0;
