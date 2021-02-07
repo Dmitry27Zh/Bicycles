@@ -13,7 +13,7 @@
   </head>
 
   <body class="page">
-    <svg style="display: none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg style="display: none;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <symbol id="icon-logo" viewBox="0 0 68 21">
         <path d="M13.3636 0V20.0455H10.0705V5.82273L8.97273 7.20682L6.825 9.975L6.72954 10.0705L6.58636 9.975L4.43864 7.20682L3.34091 5.775V20.0455H0V0H3.34091L6.72954 4.29545L10.0705 0H13.3636Z"></path>
         <path d="M8.30444 10.0704L8.20898 9.97498L8.30444 10.0704Z"></path>
@@ -72,11 +72,11 @@
             <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
             <div class="promo__callback-field">
               <label class="visually-hidden" for="name">Введите Ваше имя</label>
-              <input type="text" id="name" placeholder="Введите Ваше имя" pattern="^[А-Яа-яЁё\s]+$" required="">
+              <input type="text" id="name" placeholder="Введите Ваше имя" pattern="[A-Za-zА-Яа-яЁё]+$" required="">
             </div>
             <div class="promo__callback-field">
               <label class="visually-hidden" for="tel">Введите Ваш номер телефона</label>
-              <input type="tel" id="tel" placeholder="Введите Ваш номер телефона" pattern="\+7[0-9]{10}|8[0-9]{10}" required="">
+              <input type="tel" id="tel" data-error="Неправильно введён номер" placeholder="Введите Ваш номер телефона" pattern="^[+]|[+]?[0-9]+$" required="">
             </div>
             <button class="promo__callback-submit button" type="submit">
               Подобрать велосипед мечты

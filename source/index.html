@@ -33,7 +33,7 @@
 
   <body class="page">
     <svg
-      style="display: none"
+      style="display: none;"
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
     >
@@ -130,7 +130,7 @@
                 type="text"
                 id="name"
                 placeholder="Введите Ваше имя"
-                pattern="^[А-Яа-яЁё\s]+$"
+                pattern="[A-Za-zА-Яа-яЁё]+$"
                 required
               />
             </div>
@@ -141,8 +141,9 @@
               <input
                 type="tel"
                 id="tel"
+                data-error="Неправильно введён номер"
                 placeholder="Введите Ваш номер телефона"
-                pattern="\+7[0-9]{10}|8[0-9]{10}"
+                pattern="^[+]|[+]?[0-9]+$"
                 required
               />
             </div>
